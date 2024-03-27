@@ -1,1 +1,1 @@
-This is not mine, it's Stefanuk's script that I'm trying to fix.
+These are not mine, they're Stefanuk's scripts that I'm trying to fix.
