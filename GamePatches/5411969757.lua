@@ -6,4 +6,4 @@
 ]]
 
 -- // Run other one
-return loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/Aiming/main/GamePatches/Module/5169051062.lua"))()
+return loadstring(game:HttpGet("https://raw.githubusercontent.com/tezx11/Lib/main/GamePatches/5169051062.lua"))()
