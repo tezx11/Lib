@@ -70,10 +70,10 @@ local AimingSettings = {
     InternalEnabled = false, -- // Do not modify, for internal use only
     GUIAutoShow = true,
 
-    VisibleCheck = true,
+    VisibleCheck = false,
     TeamCheck = true,
     PlayerCheck = true,
-    FriendCheck = true,
+    FriendCheck = false,
     ForcefieldCheck = true,
     HealthCheck = true,
     InvisibleCheck = true,
@@ -86,12 +86,12 @@ local AimingSettings = {
     MaxDistance = 1000,
 
     LockMode = {
-        Enabled = false,
+        Enabled = true,
 
         InternalEnabled = false, -- // Do not modify, for internal use only
         LockedPlayer = nil, -- // Do not modify, for internal use only
 
-        UnlockBind = Enum.KeyCode.X
+        UnlockBind = Enum.KeyCode.E
     },
 
     FOVSettings = {
