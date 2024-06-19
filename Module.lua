@@ -29,7 +29,7 @@ end
 local SignalManager, BeizerManager, KeybindHandler = FastLoadDependencies(
     "https://raw.githubusercontent.com/tezx11/Lib/main/Manager.lua",
     "https://raw.githubusercontent.com/tezx11/Lib/main/BeizerManager.lua",
-    "https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Universal/KeybindHandler.lua"
+    "https://raw.githubusercontent.com/tezx11/Lib/main/KeybindHandler.lua"
 )
 
 -- // Services
