@@ -6,7 +6,7 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/t
 
 local Aiming = getgenv().Aiming
 if (not Aiming) then
-    Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/Aiming/main/Load.lua"))()()
+    Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/tezx11/Lib/main/AimingLoad"))()()
 end
 repeat wait() until Aiming.Loaded
 
