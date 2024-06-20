@@ -534,10 +534,6 @@ end)
 SaveManager:IgnoreThemeSettings()
 
 SaveManager:SetIgnoreIndexes({"MenuKeybind"})
-end
-
-local VisualsTab = Windows:AddTab("Visuals") -- // Visuals Tab
-end
             
 -- // Return
 Aiming.GUI = {Library, AimingTab, Window, UISettingsTab, ThemeManager, SaveManager}
