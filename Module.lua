@@ -101,7 +101,7 @@ local AimingSettings = {
         Type = "Static",
         Scale = 50,
         Sides = 12,
-        Colour = Color3fromRGB(231, 84, 128),
+        Colour = Color3fromRGB(255, 255, 255),
         DynamicFOVConstant = 25,
 
         FollowSelected = false
@@ -119,7 +119,7 @@ local AimingSettings = {
     TracerSettings = {
         Tracer = Drawingnew("Line"),
         Enabled = true,
-        Colour = Color3fromRGB(231, 84, 128)
+        Colour = Color3fromRGB(255, 255, 255)
     },
 
     Ignored = {
