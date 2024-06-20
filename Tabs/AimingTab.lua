@@ -12,6 +12,8 @@ repeat wait() until Aiming.Loaded
 local AimingSettings = Aiming.Settings
 local AimingUtilities = Aiming.Utilities
 
+local VisualsSettings = Visuals.Settings
+
 -- // Services
 local Players = game:GetService("Players")
 local Teams = game:GetService("Teams")
@@ -535,6 +537,19 @@ SaveManager:IgnoreThemeSettings()
 
 SaveManager:SetIgnoreIndexes({"MenuKeybind"})
 
+local VisualsTab = Windows:AddTab("Visuals") -- // Visuals Tab
+
+do
+    local MainGroup = VisualsTab:AddLeftGroupbox("Main")
+
+MainGroup:AddToggle("Skeletons", {
+        Text = "Skeletons",
+        Default = VisualsSettings.Enabled,
+        Tooltip = "Toggle Skeletons on or off",
+        Callback = function(Value)
+            VisualsSettings.Enabled = Value
+        end
+            
 -- // Return
 Aiming.GUI = {Library, AimingTab, Window, UISettingsTab, ThemeManager, SaveManager}
 return Library, AimingTab, Window, UISettingsTab, ThemeManager, SaveManager
