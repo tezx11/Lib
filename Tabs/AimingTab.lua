@@ -34,11 +34,10 @@ do
     
 local VMain = VisualsTab:AddLeftGroupbox("Main")
 
-VMain:AddToggle("Boxes", {
-    Text = 'This is a toggle',
+VMain:AddToggle("BoxesEnabled", {
+    Text = "Boxes",
     Default = true, -- Default value (true / false)
     Tooltip = 'Toggle Boxes on or off',
-
     Callback = function(Value)
     end
 })
