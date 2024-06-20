@@ -1,5 +1,5 @@
 -- // Dependencies
-local SignalBuilder = loadstring(game:HttpGet("https://raw.githubusercontent.com/tezx11/Lib/main/Module.lua"))()
+local SignalBuilder = loadstring(game:HttpGet("https://raw.githubusercontent.com/tezx11/Lib/main/ModuleManagers/Module.lua"))()
 
 -- // Manager Class
 local Manager = {}
