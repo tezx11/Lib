@@ -6,8 +6,13 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/t
 local Aiming = getgenv().Aiming
 if (not Aiming) then
     Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/tezx11/Lib/main/AimingLoad"))()()
+
+local Visuals = getgenv().Visuals
+if (not Visuals) then
+    Visuals = loadstring(gameHttpGet("https://raw.githubusercontent.com/tezx11/ESP/main/VisualsLoad"))()
+    
 end
-repeat wait() until Aiming.Loaded
+repeat wait() until Aiming.Loaded and Visuals.Loaded
 
 local AimingSettings = Aiming.Settings
 local AimingUtilities = Aiming.Utilities
