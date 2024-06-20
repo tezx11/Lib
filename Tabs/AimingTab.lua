@@ -534,6 +534,19 @@ end)
 SaveManager:IgnoreThemeSettings()
 
 SaveManager:SetIgnoreIndexes({"MenuKeybind"})
+end
+
+local VisualsTab = Windows:AddTab("Visuals") -- // Visuals Tab
+
+do
+    local MainGroup = VisualsTab:AddLeftGroupbox("Main")
+
+MainGroup:AddToggle("Skeletons", {
+        Text = "Skeletons",
+        Default = Enabled,
+        Tooltip = "Toggle Skeletons on or off",
+        Callback = function(Value)
+end
             
 -- // Return
 Aiming.GUI = {Library, AimingTab, Window, UISettingsTab, ThemeManager, SaveManager}
