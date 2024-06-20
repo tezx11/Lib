@@ -1,12 +1,12 @@
 -- // Dependencies
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/tezx11/Lib/main/Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/tezx11/Lib/main/ThemeManager"))()
-local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/tezx11/Lib/main/SaveManager"))()
+local LinoriaRepo = "https://raw.githubusercontent.com/Stefanuk12/LinoriaLib/main/"
+local Library = loadstring(game:HttpGet(LinoriaRepo .. "Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet(LinoriaRepo .. "addons/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet(LinoriaRepo .. "addons/SaveManager.lua"))()
 
 local Aiming = getgenv().Aiming
 if (not Aiming) then
-    Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/tezx11/Lib/main/AimingLoad"))()()
-    
+    Aiming = loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/Aiming/main/Load.lua"))()()
 end
 repeat wait() until Aiming.Loaded
 
@@ -23,10 +23,9 @@ if (AutoShow == nil) then
     AutoShow = true
 end
 local Window = Library:CreateWindow({
-    Title = "nigger",
+    Title = "epic hax",
     Center = true,
     AutoShow = AutoShow
-    MenuFadeTime = 0.2
 })
 
 -- //
@@ -536,7 +535,7 @@ end)
 SaveManager:IgnoreThemeSettings()
 
 SaveManager:SetIgnoreIndexes({"MenuKeybind"})
-            
+
 -- // Return
 Aiming.GUI = {Library, AimingTab, Window, UISettingsTab, ThemeManager, SaveManager}
 return Library, AimingTab, Window, UISettingsTab, ThemeManager, SaveManager
