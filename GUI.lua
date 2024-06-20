@@ -25,9 +25,9 @@ end
 local Window = Library:CreateWindow({
     Title = "nigger",
     Center = true,
-    AutoShow = AutoShow
-    MenuFadeTime = 0.2
-    TabPadding = 8,
+    AutoShow = true,
+    MenuFadeTime = 0.2,
+    TabPadding = 8
 })
 
 -- //
