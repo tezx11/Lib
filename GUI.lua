@@ -1,8 +1,8 @@
 -- // Dependencies
 local LinoriaRepo = "https://raw.githubusercontent.com/Stefanuk12/LinoriaLib/main/"
-local Library = loadstring(game:HttpGet(LinoriaRepo .. "Library.lua"))()
-local ThemeManager = loadstring(game:HttpGet(LinoriaRepo .. "addons/ThemeManager.lua"))()
-local SaveManager = loadstring(game:HttpGet(LinoriaRepo .. "addons/SaveManager.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/tezx11/Lib/main/Library.lua"))()
+local ThemeManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/tezx11/Lib/main/ThemeManager.lua"))()
+local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/tezx11/Lib/main/SaveManager.lua"))()
 
 local Aiming = getgenv().Aiming
 if (not Aiming) then
@@ -23,9 +23,11 @@ if (AutoShow == nil) then
     AutoShow = true
 end
 local Window = Library:CreateWindow({
-    Title = "epic hax",
+    Title = "nigger",
     Center = true,
     AutoShow = AutoShow
+    MenuFadeTime = 0.2
+    TabPadding = 8,
 })
 
 -- //
