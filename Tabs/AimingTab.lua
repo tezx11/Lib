@@ -25,9 +25,24 @@ local Window = Library:CreateWindow({
     Title = "nigger",
     Center = true,
     AutoShow = AutoShow
+    MenuFadeTime = 0.2
 })
 
 -- //
+local VisualsTab = Windows:AddTab("Visuals")
+do
+    
+local VMain = VisualsTab:AddLeftGroupbox("Main")
+
+VMain:AddToggle("Boxes", {
+    Text = 'This is a toggle',
+    Default = true, -- Default value (true / false)
+    Tooltip = 'Toggle Boxes on or off',
+
+    Callback = function(Value)
+    end
+})
+
 local AimingTab = Window:AddTab("Aiming")
 do
     -- // Get some parts
