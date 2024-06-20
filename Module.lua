@@ -27,9 +27,9 @@ local function FastLoadDependencies(...) -- credits to 735432575140757605
     return table.unpack(Loaded)
 end
 local SignalManager, BeizerManager, KeybindHandler = FastLoadDependencies(
-    "https://raw.githubusercontent.com/Stefanuk12/Signal/main/Manager.lua",
-    "https://raw.githubusercontent.com/Stefanuk12/Aiming/main/BeizerManager.lua",
-    "https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Universal/KeybindHandler.lua"
+    "https://raw.githubusercontent.com/tezx11/Lib/main/ModuleManagers/Manager.lua",
+    "https://raw.githubusercontent.com/tezx11/Lib/main/ModuleManagers/BeizerManager.lua",
+    "https://raw.githubusercontent.com/tezx11/Lib/main/KeybindHandler.lua"
 )
 
 -- // Services
